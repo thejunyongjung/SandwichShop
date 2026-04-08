@@ -11,7 +11,7 @@ public class SandwichShop2 {
         System.out.println("Welcome to the Sandwich Shop!");
         System.out.println("1. Regular: base price $5.45");
         System.out.println("2. Large: base price $8.95\n");
-        System.out.print("Choose 1 or 2: ");
+        System.out.print("Enter your choice '1 or 2': ");
 
         // Size? - Base Price
         int choice = read.nextInt();
@@ -55,19 +55,19 @@ public class SandwichShop2 {
         }
 
         // Age? - Discount
-        System.out.print("Your age?: ");
+        System.out.print("Enter your age: ");
         int age = read.nextInt();
 
         if (age <= 17) {
-            System.out.println("10% discount");
+            System.out.println("10% discount\n");
             priceOfSandwich *= 0.90;
         }
         else if (age >= 65) {
-            System.out.println("20% discount");
+            System.out.println("20% discount\n");
             priceOfSandwich *= 0.80;
         }
         else {
-            System.out.println("No Discount");
+            System.out.println("No Discount\n");
         }
 
         System.out.printf("The total cost is: $%.2f", priceOfSandwich);
